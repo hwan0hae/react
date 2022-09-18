@@ -68,3 +68,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### `리액트로 작업한 프로젝트 전체 코드 업로드`
+
+README 파일이 없다면 생성
+echo "# movie-app" >> README.md
+
+프로젝트 폴더를 git 저장소로 설정
+git init
+
+프로젝트 폴더 내 모든 파일을 add
+git add .
+
+프로젝트 폴더 내 모든 파일을 commit
+git commit -m "first commit"
+
+메인 branch를 'main'으로 설정
+git branch -M main
+
+git 원격 저장소와 연결
+git remote add origin https://github.com/본인아이디/movie-app.git
+
+main branch로 git push
+git push -u origin main
